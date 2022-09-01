@@ -1,5 +1,11 @@
 package main
 
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 func insertIntoMaxTree(root *TreeNode, val int) *TreeNode {
 	result := root
 	node := TreeNode{val, nil, nil}
